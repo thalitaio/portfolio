@@ -14,47 +14,192 @@
 <body>
     <div class="container">
 
-        <div class="hamburguer">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
-            <span>Fechar</span>
-
-
-        </div>
-
-        <header>
-            <div class="img-wrapper">
-                <img src="/imagens/bg.jpg" alt="">
+        <!-- Início menu sidebar-->
+      
+            <div class="hamburguer">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+                <span>Fechar</span>
             </div>
 
-            <div class="banner">
-                <h1>Developer & Software engineering student</h1>
-                <p>Thalita Carvalho</p>
+            <header id="home">
+                <div class="img-wrapper">
+                    <img src="/imagens/bg.jpg" alt="">
+                </div>
 
-                <button>Saiba mais</button>
-            </div>
-        </header>
+                <div class="banner">
+                    <h1>Developer & Software engineering student</h1>
+                    <p>Thalita Carvalho</p>
 
-        <div class="sidebar">
-            <nav>
-                <ul class="menu">
-                    <li class="menu-item"><a href="" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Conhecimentos</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Contatos</a></li>
-                </ul>
-            </nav>
-            <div class="social-media">
-                <a href=""><i class="fab fa-linkedin"></i></a>
-                <a href=""><i class="fab fa-github-square"></i></a>
-                <a href=""><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://www.linkedin.com/in/thalitaio/" target="_blank"><button>Saiba mais</button></a>
+                </div>
+            </header>
+
+            <aside class="sidebar">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="" class="menu-link">Home</a></li>
+                        <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimentos</a></li>
+                        <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                        <!-- desativada temporariamente <li class="menu-item"><a href="#contato" class="menu-link">Contatos</a></li> -->
+                    </ul>
+                </nav>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/thalitaio/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/thalitaio" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.instagram.com/thalita.io/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                </div>
+            </aside>
+
+            <!-- fim menu sidebar -->
+
+        <section class="sessao-conhecimentos" id="conhecimentos">
+            <div class="sessao-header">
+                <h1>Conhecimentos</h1>
             </div>
-        </div>
+            <div class="conhecimentos">
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Comecei a fazer pequenas alterações no HTML da minha página do MySpace (rede social pré-facebook) ainda adolescente.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Sou uma grande fã de CSS. Um maravilhoso aliado para deixar tudo mais interessante.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-bootstrap"></i>
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Coloquei o Bootstrap separado de CSS, uma vez que possui as suas peculiaridades.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>A primeira linguagem de programação que tive contato. Escolhi persistir na linguagem afim de tirar o melhor dela.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-github"></i>
+                        <h3>Git e GitHub</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Aprendo todos os dias um pouco mais sobre controle de versões.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>Inglês</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Auto-didata, hoje possuo Inglês considerado B2.</p>
+                    </div>
+                </div>
+                <div class="conhecimentos-img-wrapper">
+                    <img src="/imagens/Design sem nome (1).png" alt="figura de menina com telescópio">
+                </div>
+            </div>
+        </section>
+        <section class="sessao-projetos" id="projetos">
+            <div class="sessao-header">
+                <h1>Projetos</h1>
+            </div>
+            <div class="projetos">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="/imagens/calculadora.jpg" alt="imagem de calculadora">
+                    </div>
+                    <div class="card-info">
+                        <h2>Calculadora</h2>
+                        <h3>JavaScript</h3>
+                        <p>Um dos meus primeiros projetos JavaScript.</p>
+                        <a href="https://github.com/thalitaio/calculator" target="_blank"><button class="btn">Saiba Mais</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="/imagens/fire.jpg" >
+                    </div>
+                    <div class="card-info">
+                        <h2>Fogo Doom</h2>
+                        <h3>JavaScript</h3>
+                        <p>Apesar de nunca ter jogado Doom, sou apaixonada por pixel art. </p>
+                        <a href="https://github.com/thalitaio/fogo-doom" target="_blank"><button class="btn">Saiba Mais</button></a>
+                    </div>
+                </div> 
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="/imagens/app-pega-dinheirinho.jpg" alt="imagem para o projeto pega dinheirinho">
+                    </div>
+                    <div class="card-info">
+                        <h2>Pega Dinheirinho</h2>
+                        <h3>JavaScript</h3>
+                        <p>O objetivo do jogo é claro: pegar os dinheirinhos voadores. O jogo possui 3 níveis.</p>
+                       <a href="https://github.com/thalitaio/pega-dinheirinho" target="_blank"> <button class="btn">Saiba Mais</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sessão Contato 
+        <section class="sessao-contato" id="contato"> 
+            <div class="contato-wrapper">
+                <div class="contato-left">
+
+                </div>
+                <div class="contato-right">
+                    <h1>Contato</h1>
+                    <form>
+                        <div class="input-group"><input type="text" class="field" id="nome"><label for="nome" class="field-label">Nome</label></div>
+                        <div class="input-group"><input type="text" class="field" id="email"><label for="email" class="field-label">E-mail</label></div>
+                        <div class="input-group"><textarea class="field" id="mensagem"></textarea>
+                        <label for="mensagem" class="field-label">Mensagem</label></div>
+                        <button type="submit" class="btn btn-submit">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section> -->
+
+        <footer>
+            <div class="footer-content">
+                <p>
+                     2021 - Thalita Carvalho - contatothalitanunes@gmail.com
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/thalitaio/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/thalita.io/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/thalitaio" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/thalitaio" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
 
     </div>
-    
-
 </body>
 <script src="script.js"></script>
 </html>
